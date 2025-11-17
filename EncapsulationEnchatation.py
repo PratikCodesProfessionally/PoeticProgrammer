@@ -1,4 +1,10 @@
-class Garden:
+#Gardens are where the love grows in secret,
+#A future predestined red, pink, glossy, scarlet
+#But between different shades is a mystery scarred in violet
+#Some are guarded by thorns seen, some by unseen bayonets
+
+
+class Garden: 
     def __init__(self):
         self._flowers = ["rose", "lily", "tulip"]   # protected
         self.__secret_seed = "moon-bloom"           # private
