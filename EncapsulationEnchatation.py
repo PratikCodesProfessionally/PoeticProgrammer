@@ -22,10 +22,10 @@ class Garden:
 
 class PoetGardener(Garden):
     def express(self):
-        # ✅ Can access _flowers (single underscore - protected by convention)
+        # Can access _flowers (single underscore - protected by convention)
         visible = "I see " + ", ".join(self._flowers) + " dancing in dewlight."
         
-        # ❌ Cannot access __secret_seed directly (double underscore - name mangled)
+        # Cannot access __secret_seed directly (double underscore - name mangled)
         # print(self.__secret_seed)  # This would raise AttributeError!
         
         return visible
@@ -38,15 +38,15 @@ class PoetGardener(Garden):
         return f"{hint}\n{full_story}\nThe poet feels its presence, but cannot name it alone."
 
 
-# 🌻 Let's watch the magic unfold
+#  Let's watch the magic unfold
 rumi = PoetGardener()
 rumi.grow("sunflower")
 
-print("=== What the Poet Sees (protected _flowers) ===")
+print("\nWhat the Poet Sees (protected _flowers)")
 print(rumi.express())
 
-print("\n=== What the Garden Reveals (private __secret_seed via method) ===")
+print("\nWhat the Garden Reveals (private __secret_seed via method)")
 print(rumi.reveal())
 
-print("\n=== How the Poet Senses the Mystery ===")
+print("\nHow the Poet Senses the Mystery (indirect access)")
 print(rumi.sense_the_mystery())

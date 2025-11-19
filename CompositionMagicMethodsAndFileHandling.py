@@ -1,3 +1,12 @@
+"""
+A Symphony of Feelings:
+Before one starts manhandling
+one should refelct upon himself without rambling
+writing you feelings down is a good way of self-sampling 
+otherwise it may develop into addiction like gambling
+That's way here we are Crafting a Journal with Composition, Magic Methods, and File Handling
+"""
+
 #  Polymorphic Emotions (from previous lesson) 
 
 class Emotion:
