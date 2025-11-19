@@ -1,3 +1,8 @@
+# Is Universe real or just an abstraction?
+#A figment of cosmic imagination?
+#Abstraction weaves the unseen thread,
+#Unveiling forms that come to tread.
+
 from universe import Galaxy, abstractmethod
 
 
@@ -20,3 +25,8 @@ class Water(Element):
 class Air(Element):
     def behave(self):
         return "Bear with me mi Lord. He is not a liar. There was air before the fire."
+    
+ #Questions for the readers
+ # 1. How does abstraction help in managing complexity in large systems?
+ # 2. Can you think of real-world scenarios where abstraction is beneficial?
+    
