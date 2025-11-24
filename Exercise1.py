@@ -29,9 +29,13 @@ class SwimMixin:
 
 #This class should store creatures in a list    
 class CreatureManager:    
-    def add(self, *creatures): 
-        #Accept multiple creatures using *args
-        self.creatures = list(creatures)
+    def __init__(self):
+        # create the list once for the lifetime of the manager
+        self.creatures = []
+
+    def add(self, *creatures):
+        # Accept multiple creatures and append to the existing list
+        self.creatures.extend(creatures)
 
 #Have a method report(**kawargs) that uses keyword arguments for optional settings: 1)uppercase =True/False 2)Inside this method: Call describe() for every creature (polymorphism). If the creature has fly() or swim() methods, call them too. Apply settings from kwargs.
     def report(self, **kwargs):
